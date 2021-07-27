@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    function fazPegadinha() {
+        alert("salve");
+        alert("jovem!");
+        alert("Tá oço");
+        alert("Ficar");
+        alert("Clicando em");
+        alert("Ok");
+	    	alert("né?");
+    }
+	 
+	 fazPegadinha();
+</script>
