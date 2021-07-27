@@ -7,7 +7,7 @@
         alert("Ficar");
         alert("Clicando em");
         alert("Ok");
-	    	alert("né?");
+	alert("né?");
     }
 	 
 	 fazPegadinha();
