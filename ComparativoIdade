@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<h1> Calculo de idade! </h1>
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	
+	function mostra (frase){
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	var nascimentoChristian = 1993;
+	var nascimentoClifort = 1995;
+	var ano = 2021;
+  //var pulaLinha = "<br><br><br>";                                         // quantidade Solicitado em pratica
+	
+	mostra("***************************************************");
+	mostra("*******Diferença entre minha idade e de meu irmão !*******");
+	mostra("***************************************************");
+	mostra("Diferença entre nossa idade: "+(nascimentoClifort - nascimentoChristian));
+		
+</script>
