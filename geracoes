@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<h1> O Problema das gerações </h1>
+
+<script>
+
+	var laborTime = 28;          									                    	// idade média cada geração.
+	var beguinCount = 1500;      								                    		// inicio contagem, chegada Portugueses.
+	var currentYear = 2021;      									                      // ano atual.
+	var geracoes = parseInt((currentYear-beguinCount)/laborTime);       // The parseInt() function is used to accept the string ,radix parameter and convert it into an integer.
+	
+	function pulaLinha() {
+		document.write("<br><hr><br>");                                  
+	}
+	function mostra(frase){
+		document.write("<big>"+frase+"</big>");
+		pulaLinha();
+	}
+	
+	mostra(" Quantas gerações se passaram des de 1500 (descobrimento de Brasil) ate o ano atual? ") ;
+	mostra(" se passaram "+ geracoes +" gerações") ;
+
+</script>
