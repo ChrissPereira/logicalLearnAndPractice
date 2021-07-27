@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+
+<h3> === Álcool ou Gasolina? ===</h3>
+
+<script>
+	var tanque = 40;                    				 //L
+	var caminhoComGasolina = 480;     					 //KM
+	var caminhoComAlcool = 300;       					 //KM
+	var consumoDeGasolina = caminhoComGasolina / tanque;
+	var consumoDeAlcool = caminhoComAlcool / tanque;
+	document.write("Consumo médio usando Gasolina = " + consumoDeGasolina + "<br>" );
+	document.write("Consumo médio usando Álcool = " + consumoDeAlcool + "<br>" );
+	
+</script>
