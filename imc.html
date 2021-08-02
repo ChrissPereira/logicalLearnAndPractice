@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+
+<h1> Calculo IMC </h1>
+
+<script>
+	function pulaLinha () {
+		document.write( "<br>" );
+	}
+	
+	function mostra ( frase ){
+		document.write( frase );
+	}
+	
+	function calculaImc (peso , altura) {
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+	
+	mostra("IMC Christian  ");
+	var pesoChristian = 95;                                                      //peso em Kg
+	var alturaChristian = 1.80;                                                   //Altura em Cm
+//	var imcChristian = pesoChristian / ( alturaChristian * alturaChristian );      //calculo IMC de acordo com OMS
+//	mostra("O imc de Christian é "+ imcChristian );
+	var imcChristian = calculaImc(pesoChristian, alturaChristian);
+	mostra(imcChristian);
+	
+	pulaLinha();
+	
+	mostra("IMC do amigo  ");
+	var pesoAmigo = 90;
+	var alturaAmigo = 1.70;
+//	var imcAmigo = pesoAmigo / ( alturaAmigo * alturaAmigo );
+//	mostra( "O imc do meu amigo é " + imcAmigo )
+	calculaImc(pesoAmigo, alturaAmigo);
+	var imcAmigo = calculaImc(pesoAmigo , alturaAmigo);
+	mostra(imcAmigo);
+	
+	pulaLinha();
+	
+	mostra("A soma dos Imcs = "+ (imcChristian + imcAmigo));
+	
+	pulaLinha();
+	pulaLinha();
+	pulaLinha();
+	
+	mostra("------------recebendo valores do user --------------");
+	pulaLinha();
+	
+	var nome = prompt("Digite seu nome: ");
+	var peso = prompt("Digite seu peso ");
+	var altura = prompt("Digite sua altura  ");
+	mostra("IMC de " + nome + " = " + (calculaImc(peso, altura)));
+	
+//	pulaLinha();
+	
+//	var peso2 = prompt("2º peso = ");
+//	var altura2 = prompt ("2º altura = ");
+//	mostra("imc 2º pessoa = "+ (calculaImc(peso2, altura2))); 	
+	
+	
+	
+	
+	
+</script>
