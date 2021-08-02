@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+	}
+	function escreve(frase){
+		document.write(frase);
+	}
+	
+	var vitorias = parseInt(prompt("entre o numero de vitorias: "));
+	var empates = parseInt(prompt("entre a quantidade de empates"));
+	var pontos = (vitorias * 3)+empates;
+	
+	escreve("quantidade de pontos : "+pontos);
+	pulaLinha();
+	
+	if(pontos > 28 ){
+		escreve("Time melhor esse ano!");
+	}
+	if(pontos < 28 ){
+		escreve("Time Pior esse ano! ");
+	}
+	if(pontos == 28){
+		escreve("Time igual ano passado! ");
+	}
+
+</script>
