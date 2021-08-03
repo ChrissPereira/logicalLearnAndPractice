@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<h1>Tabuada simples</h1>
+
+<script>
+	
+	function escreve (frase){
+		document.write(frase);
+	}
+	function pulaLinha(){
+		escreve("<br>");
+	}
+	
+	var multiplicado = parseInt(prompt("Digite o numero a ser multiplicado!"));
+	
+	for (var i = 0; i <= 10; i ++){
+		escreve(multiplicado + " * " + i + " == " + (multiplicado * i));
+		pulaLinha();
+	}
+	
+</script>
