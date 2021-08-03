@@ -6,15 +6,14 @@
 	function pulaLinha () {
 		document.write( "<br>" );
 	}
-	
 	function mostra ( frase ){
 		document.write( frase );
 	}
-	
 	function calculaImc (peso , altura) {
 		var imc = peso / (altura * altura);
 		return imc;
 	}
+	
 	
 	mostra("IMC Christian  ");
 	var pesoChristian = 95;                                                      //peso em Kg
@@ -26,22 +25,15 @@
 	
 	pulaLinha();
 	
-	mostra("IMC do amigo  ");
-	var pesoAmigo = 90;
-	var alturaAmigo = 1.70;
+//	mostra("IMC do amigo  ");
+//	var pesoAmigo = 90;
+//	var alturaAmigo = 1.70;
 //	var imcAmigo = pesoAmigo / ( alturaAmigo * alturaAmigo );
 //	mostra( "O imc do meu amigo é " + imcAmigo )
-	calculaImc(pesoAmigo, alturaAmigo);
-	var imcAmigo = calculaImc(pesoAmigo , alturaAmigo);
-	mostra(imcAmigo);
-	
-	pulaLinha();
-	
-	mostra("A soma dos Imcs = "+ (imcChristian + imcAmigo));
-	
-	pulaLinha();
-	pulaLinha();
-	pulaLinha();
+//	calculaImc(pesoAmigo, alturaAmigo);
+//	var imcAmigo = calculaImc(pesoAmigo , alturaAmigo);
+//	mostra(imcAmigo);
+//	mostra("A soma dos Imcs = "+ (imcChristian + imcAmigo));
 	
 	mostra("------------recebendo valores do user --------------");
 	pulaLinha();
@@ -49,16 +41,30 @@
 	var nome = prompt("Digite seu nome: ");
 	var peso = prompt("Digite seu peso ");
 	var altura = prompt("Digite sua altura  ");
-	mostra("IMC de " + nome + " = " + (calculaImc(peso, altura)));
+//	mostra("IMC de " + nome + " = " + (calculaImc(peso, altura)));
+	var imc = calculaImc(peso, altura);
+	mostra(nome + ", o seu IMC é: " + imc);
 	
-//	pulaLinha();
+	pulaLinha();
 	
 //	var peso2 = prompt("2º peso = ");
 //	var altura2 = prompt ("2º altura = ");
 //	mostra("imc 2º pessoa = "+ (calculaImc(peso2, altura2))); 	
+
+//	if(imc < 18.5) {
+//		mostra("IMC abaixo do esperado!");
+//	}  
+//	if(imc > 35) {
+//		mostra("IMC acima do esperado!");
+//	}
+//	if(imc >= 18.5 && imc < 35){
+//		mostra("IMC ideal!");
+//	}
 	
-	
-	
-	
+	if(imc > 35 || imc < 18.5){
+		mostra("    2º    Imc fora do padrão!");
+	}else{
+		mostra("    2º    IMC ideal!");
+	}
 	
 </script>
